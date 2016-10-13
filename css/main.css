@@ -1,0 +1,940 @@
+/* 
+---------------------------------------------
+this code resets css styles for all elements
+---------------------------------------------
+*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* 
+---------------------------------------------
+Global Styles
+---------------------------------------------
+*/
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+#container {
+	width: 1280px;
+	margin: 0 auto;
+	font: 100 18px/30px 'Roboto', sans-serif;
+	color: #d1d1d0;
+	padding-top: 30px;
+	background-color: #191816;
+}
+
+.cushion {
+	padding: 50px 100px 80px ;
+}
+
+.rounded {
+	border-radius: 20px;
+}
+
+.button {
+	font-weight: 300;
+	color: #fff;
+	background-color: #f15f24;
+	border-radius: 10px;
+	padding: 8px 21px;
+}
+
+.fl{
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+.highlight {
+	color: #f15f24;
+	font: 300 28px/28px 'Arima Madurai', cursive;
+}
+
+/* 
+---------------------------------------------
+Clear-fix
+---------------------------------------------
+*/
+
+.cf:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* 
+---------------------------------------------
+Grid
+---------------------------------------------
+*/
+
+.col-1-2 {
+	width: 50%;
+	float: left;
+}
+
+.col-1-3 {
+	width: 33.33%;
+	float: left;
+}
+
+.col-2-5 {
+	width: 40%;
+	float: left;
+}
+
+/* 
+---------------------------------------------
+Typography
+---------------------------------------------
+*/
+
+h1 {
+	font: 100 48px/60px 'Arima Madurai', cursive;
+	color: #f15f24;
+	text-align: center;
+	margin: 20px 0;
+}
+
+h5 {
+	font: 300 18px/24px 'Roboto', sans-serif;
+	color: #d1d1d0;
+	text-align: center;
+	margin-bottom: 60px;
+}
+
+h3 {
+	font: 100 30px/42px 'Roboto', sans-serif;
+	color: #fff;
+	margin: 15px 0;
+
+}
+
+.event-info {
+	font: 400 18px/30px 'Roboto', sans-serif;
+	color: #fff;
+}
+
+small {
+	font-weight: 100;
+	font-size: 14px;
+	letter-spacing: 1px;
+}
+
+/* 
+---------------------------------------------
+Links
+---------------------------------------------
+*/
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+/* 
+---------------------------------------------
+Background color
+---------------------------------------------
+*/
+
+.alt-bg {
+	background-color: #000;
+}
+
+/* 
+---------------------------------------------
+Header
+---------------------------------------------
+*/
+
+header {
+	padding: 0 100px;
+}
+
+nav li {
+	display: inline-block;
+	width: 100px;
+	text-align: center;
+}
+
+nav a {
+	font-size: 20px;
+	font-weight: 300;
+}
+
+nav img {
+	float: left;
+}
+
+nav ul {
+	float: left;
+	width: 500px;
+	margin-top: 75px;
+	margin-left: 50px;	
+}
+
+img.search {
+	float: right;
+	display: block;
+	margin-top: 77px;
+}
+
+nav a:hover,
+nav a.selected {
+	color: #f15f24;
+}
+
+
+/* 
+---------------------------------------------
+Footer
+---------------------------------------------
+*/
+
+.subscribe {
+	padding: 30px 100px 30px 100px;
+}
+
+.subscribe p {
+	font-size: 32px;
+	line-height: 48px;
+}
+
+.subscribe div {
+	padding-top: 40px;
+	padding-left: 20px;
+}
+
+.subscribe input {
+	border: none;
+	border-bottom: solid 1px #f15f24;
+	background-color: #191816;
+	color: #fff;
+	font: 200 16px/28px 'Roboto', sans-serif;
+	letter-spacing: 1px;
+	width: 300px;
+	margin-right: 20px;
+	margin-left: 30px;
+}
+
+.subscribe input:focus {
+	outline: none;
+}
+
+.contact {
+	text-align: center;
+	padding-top: 50px;
+	font: 400 18px/24px 'Roboto', sans-serif;
+}
+
+.contact .social-media {
+	margin: 10px 20px 30px 20px;
+}
+
+.contact .logo {
+	padding-bottom: 20px;
+}
+
+.contact p {
+	margin-bottom: 20px;
+}
+
+iframe {
+	border: none;
+}
+
+/* 
+---------------------------------------------
+Image Captions
+---------------------------------------------
+*/
+
+.caption {
+	position: relative;
+	overflow: hidden;
+
+	/* Only the -webkit- prefix is required these days */
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+}
+
+.caption::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: transparent;
+	transition: background .7s ease-out;
+}
+
+
+.caption:hover::before {
+	background: rgba(0,0,0,.6);
+}
+
+.caption-media {
+	display: block;
+	min-width: 100%;
+	max-width: 100%;
+	height: auto;
+}
+
+.caption-overlay {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 180px 40px 0 40px;
+	color: white;
+
+	-webkit-transform: translateY(100%);
+            transform: translateY(100%);
+
+    transition: -webkit-transform 0.35s ease-out;
+    transition:         transform 0.35s ease-out;
+}
+
+.caption-overlay h5 {
+	margin-bottom: 20px;
+}
+
+.caption:hover .caption-overlay {
+	-webkit-transform: translateY(0);
+            transform: translateY(0);
+}
+
+
+
+/* 
+---------------------------------------------
+Home page
+---------------------------------------------
+*/
+
+#index-hero {
+	background-image: url("../images/swingin.jpg");
+	height: 650px;
+	margin-top: 117px;
+}
+
+#index-hero p {
+	padding: 200px 0 0 120px;
+	font-size: 48px;
+	font-weight: 100;
+	line-height: 60px;
+	width: 400px;
+}
+
+#index-hero a {
+	display: inline-block;
+	margin-left: 120px;
+	margin-top: 20px;
+}
+
+.date {
+	font-size: 30px;
+	font-weight: 400;
+}
+
+.intro {
+	margin-top: 10px;
+}
+
+.intro p {
+	margin: 0 150px;
+}
+
+.line {
+	position: absolute;
+	background-color: #f15f24;
+}
+
+.week-ahead section {
+	margin: 85px 30px 0 120px;
+	width: 330px;
+}
+
+.week-ahead section p {
+	width: 130px;
+	margin-top: 15px;
+}
+
+.week-ahead a {
+	margin-top: 85px;
+}
+
+.week-ahead li {
+	position: relative;
+	margin-bottom: 50px;
+}
+
+.week-ahead .line:nth-of-type(1) {
+	height: 1px;
+	width: 270px;
+	top: 40px;
+	left: 575px;
+}
+
+.week-ahead .line:nth-of-type(2) {
+	height: 285px;
+	width: 1px;
+	top: 0;
+	left: 650px;
+}
+
+.week-ahead .line:nth-of-type(3) {
+	height: 285px;
+	width: 1px;
+	top: 80px;
+	left: 670px;
+}
+
+.arrow {
+	float: left;
+	margin-left: 510px;
+	margin-top: 50px;
+}
+
+.announced section {
+	margin-left: 70px;
+	padding-top: 340px;
+}
+
+.announced a {
+	margin-right: 20px;
+}
+
+.announced li {
+	position: relative;
+	margin-top: 80px;
+	margin-bottom: 20px;
+}
+
+.announced .line:nth-of-type(1) {
+	height: 145px;
+	width: 1px;
+	top: 300px;
+	left: 35px;
+}
+
+.announced .line:nth-of-type(2) {
+	height: 1px;
+	width: 200px;
+	top: 485px;
+	left: 5px;
+}
+
+.free li {
+	position: relative;
+}
+
+.free li:nth-of-type(2) {
+	margin-left: 17px;
+}
+
+.free .line:nth-of-type(1) {
+	height: 130px;
+	width: 1px;
+	top: 300px;
+	left: 0;
+}
+
+.free section {
+	margin-left: 20px;
+	padding-top: 300px;
+}
+
+/* 
+---------------------------------------------
+Events Page
+---------------------------------------------
+*/
+
+.event-day h1 {
+	text-align: left;
+}
+
+.event-day h3 {
+	padding-top: 335px;
+}
+
+.event-day li {
+	position: relative;
+}
+
+.event-day .line:nth-of-type(1) {
+	height: 130px;
+	width: 1px;
+	top: 340px;
+	left: 0;
+}
+
+.event-day section {
+	margin-left: 20px;
+}
+
+.event-day a {
+	margin: 10px 50px 0 0;
+}
+
+
+/* 
+---------------------------------------------
+Contact Page
+---------------------------------------------
+*/
+
+#contact-hero {
+	height: 398px;
+	background-image: url("../images/contacthero.jpg");
+	text-align: center;
+	padding-top: 150px;
+	margin-top: 117px;
+}
+
+#contact-hero p {
+	font: 300 48px/60px 'Arima Madurai', cursive; 
+}
+
+.contact-address {
+	padding: 50px 250px 80px 300px;
+}
+
+.address h3 {
+	font-family: 'Arima Madurai', cursive;
+	color: #f15f24;
+}
+
+.address {
+	padding-left: 100px;
+	padding-right: 100px;
+	text-align: left;
+}
+
+
+.address:nth-of-type(1) {
+	border-right: 0.5px solid #fff;
+}
+
+.contact-form {
+	text-align: center;
+	padding: 50px 300px 80px 300px;
+}
+
+.contact-form p {
+	padding-bottom: 50px;
+}
+
+.contact-form input, textarea {
+	border: none;
+	border-bottom: solid 1px #f15f24;
+	background-color: #000;
+	color: #fff;
+	font-weight: 300;
+	font-size: 16px;
+	font-family: 'Source Sans Pro', sans-serif;
+	width: 500px;
+	margin-bottom: 25px;
+}
+
+input:focus, textarea:focus {
+	outline: none;
+}
+
+/* 
+---------------------------------------------
+Google Maps
+---------------------------------------------
+*/
+
+#map {
+	padding-left: 140px;
+}
+
+#embedded-map-canvas {
+	height:100%; 
+	width:100%;
+	max-width:100%;
+}
+
+#map-container {
+	height:400px;
+	width:1000px;
+	max-width:100%;
+	list-style:none; 
+	transition: none;
+	overflow:hidden;
+}
+
+#embedded-map-canvas .text-marker {
+	max-width:none!important;
+	background:none!important;
+}
+
+#map iframe {
+	height:100%;
+	width:100%;
+	border:0;
+}
+
+
+
+/* 
+---------------------------------------------
+About Page
+---------------------------------------------
+*/
+
+#about-hero {
+	height: 480px;
+	background-image: url("../images/abouthero.jpg");
+	text-align: center;
+	padding-top: 200px;
+	margin-top: 117px;
+}
+
+#about-hero p {
+	font: 300 48px/60px 'Arima Madurai', sans-serif; 
+}
+
+#about {
+	position: relative;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+#about p {
+	padding: 60px 20px 0 80px;
+}
+
+#about .line:nth-of-type(1) {
+	height: 1px;
+	width: 250px;
+	top: 100px;
+	left: 1000px;
+}
+
+#about .line:nth-of-type(2) {
+	height: 285px;
+	width: 1px;
+	top: 75px;
+	left: 1220px;
+}
+
+#about .line:nth-of-type(3) {
+	height: 285px;
+	width: 1px;
+	top: 130px;
+	left: 1205px;
+}
+
+#event-center {
+	padding-left: 335px;
+	padding-right: 300px;
+	position: relative;
+}
+
+#event-center .line:nth-of-type(1) {
+	height: 1px;
+	width: 355px;
+	top: 325px;
+	left: 80px;
+}
+
+#event-center .line:nth-of-type(2) {
+	height: 285px;
+	width: 1px;
+	top: -35px;
+	left: 270px;
+}
+
+#event-center .line:nth-of-type(3) {
+	height: 200px;
+	width: 1px;
+	top: -70px;
+	left: 255px;
+}
+
+/* 
+---------------------------------------------
+Rent Page
+---------------------------------------------
+*/
+
+#rent-hero {
+	height: 480px;
+	background-image: url("../images/renthero.jpg");
+	text-align: center;
+	padding-top: 170px;
+	margin-top: 117px;
+}
+
+#rent-hero p {
+	font: 300 48px/60px 'Arima Madurai', sans-serif; 
+}
+
+#quote {
+	position: relative;
+	padding-top: 30px;
+}
+
+#quote p {
+	font: 300 36px/42px 'Arima Madurai', sans-serif;
+	padding-left: 300px;
+	padding-right: 200px;
+	padding-bottom: 40px;
+	padding-top: 30px;
+}
+
+p#quotes {
+	position: absolute;
+	padding: 0 0;
+	left: 160px;
+	top: 20px;
+	font: 300 300px/300px 'Arima Madurai', sans-serif;
+	color: #f15f24;
+}
+
+#event-center-info h1 {
+	padding-top: 40px;
+}
+
+#event-center-info p {
+	text-align: center;
+}
+
+#about-event-center {
+	position: relative;
+	padding-top: 60px;
+	padding-bottom: 100px;
+}
+
+#about-event-center div {
+	padding-right: 60px;
+}
+
+div.promotion {
+	padding: 50px;
+}
+
+div.promotion p {
+	padding-left: 100px;
+	float: left;
+	width: 65%;
+}
+
+div.promotion a {
+	display: inline-block;
+	margin-top: 20px;
+	margin-left: 50px;
+}
+
+.special-text {
+	font: 300 32px/40px 'Arima Madurai', cursive;
+}
+
+/* 
+---------------------------------------------
+Calendar
+---------------------------------------------
+*/
+
+
+#min-calendar {
+	height: 100px;
+	margin-top: 117px;
+	text-align: center;
+	background-color: #000;
+}
+
+#min-calendar a.expand {
+	display: inline-block;
+	padding: 30px 300px 0 0;
+	font: 300 36px/36px 'Arima Madurai', cursive;
+	color: #f15f24;
+}
+
+#min-calendar p {
+	font: 300 20px/20px 'Arima Madurai', cursive;
+	color: #fff;
+	position: absolute;
+	left: 730px;
+	top: 187px;
+}
+
+#calendar {
+	height: 400px;
+	margin-top: 117px;
+	text-align: center;
+	background-color: #000;
+}
+
+#calendar ul {
+	list-style-type: none;
+}
+
+#calendar .month-name {
+	font: 300 28px/28px 'Arima Madurai', cursive;
+	color: #f15f24;
+	text-align: center;
+}
+
+/* Month header */
+#calendar .month {
+    padding: 10px 0;
+    margin: 0 200px;
+}
+
+/* Month list */
+#calendar .month ul {
+    margin: 0;
+    padding: 0;
+}
+
+#calendar .month ul li {
+    color: white;
+    font-size: 20px;
+}
+
+#calendar .month .title {
+	position: relative;
+}
+
+/* Previous button inside month header */
+#calendar .month .prev {
+    position: absolute;
+    left: 500px;
+    top: 0;
+    font-size: 48px;
+    font-weight: 200;
+    color:#777;
+}
+
+#calendar .month .close {
+    position: absolute;
+    left: 620px;
+    top: -30px;
+    font-size: 28px;
+    font-weight: 200;
+    color: #f15f24;
+}
+
+/* Next button */
+#calendar .month .next {
+    position: absolute;
+    left: 530px;
+    top: 0;
+    font-size: 48px;
+    font-weight: 200;
+}
+
+/* Weekdays (Mon-Sun) */
+#calendar .weekdays {
+    padding: 10px 0;
+    margin: 0 200px;
+}
+
+#calendar .weekdays li {
+    display: inline-block;
+    width: 13.6%;
+    font-family: 'Arima Madurai', cursive;
+    font-weight: 400;
+    font-size: 16px;
+    color: #f15f24;
+    text-align: center;
+}
+
+/* Days (1-31) */
+#calendar .days {
+    padding: 10px 0;
+    margin: 0 200px;
+}
+
+#calendar .days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size:14px;
+    color:#777;
+}
+
+/* Highlight the "current" day */
+#calendar .days li .today {
+    padding: 6px;
+    background: #f15f24;
+    border-radius: 100%;
+    color: white !important
+}
+
+#calendar .days li .event-day {
+    padding: 6px;
+    border: 1px solid #f15f24;
+    border-radius: 100%;
+    color: white !important
+}
+
+#calendar .days li.future {
+	color: #fff;
+}
+
+.content {
+	display: none;
+}
