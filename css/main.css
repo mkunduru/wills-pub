@@ -324,7 +324,7 @@ Image Captions
 
 
 .caption:hover::before {
-	background: rgba(0,0,0,.6);
+	background: rgba(0,0,0,.7);
 }
 
 .caption-media {
