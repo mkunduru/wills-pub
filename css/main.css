@@ -322,7 +322,6 @@ Image Captions
 	transition: background .7s ease-out;
 }
 
-
 .caption:hover::before {
 	background: rgba(0,0,0,.7);
 }
@@ -340,8 +339,8 @@ Image Captions
 	right: 0;
 	bottom: 0;
 	left: 0;
+	color: #fff;
 	padding: 180px 40px 0 40px;
-	color: white;
 
 	-webkit-transform: translateY(100%);
             transform: translateY(100%);
@@ -379,6 +378,7 @@ Home page
 	font-weight: 100;
 	line-height: 60px;
 	width: 400px;
+	color: #fff;
 }
 
 #index-hero a {
@@ -813,9 +813,9 @@ Calendar
 #min-calendar p {
 	font: 300 20px/20px 'Arima Madurai', cursive;
 	color: #fff;
-	position: absolute;
-	left: 730px;
-	top: 187px;
+	position: relative;
+	left: -30px;
+	top: -26px;
 }
 
 #calendar {
