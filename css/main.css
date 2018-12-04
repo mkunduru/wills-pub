@@ -535,7 +535,7 @@ Image Captions
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     color: #000;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .img-caption-overlay::before,
