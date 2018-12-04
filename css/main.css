@@ -1,3 +1,133 @@
+/*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+ * {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/*
+ * Hyperlinks.
+ */
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/*
+ * List styles
+ */
+
+ol, ul {
+    list-style: none;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
 /* 
 ---------------------------------------------
 this code resets css styles for all elements
@@ -22,278 +152,295 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-	display: block;
+    display: block;
 }
 body {
-	line-height: 1;
+    line-height: 1;
 }
 ol, ul {
-	list-style: none;
+    list-style: none;
 }
 blockquote, q {
-	quotes: none;
+    quotes: none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+    content: '';
+    content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
-/* 
----------------------------------------------
-Global Styles
----------------------------------------------
-*/
-
-* {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+*:focus {
+    outline: 0;
+    outline: none;
 }
 
-#container {
-	width: 1280px;
-	margin: 0 auto;
-	font: 100 18px/30px 'Roboto', sans-serif;
-	color: #d1d1d0;
-	padding-top: 30px;
-	background-color: #191816;
-}
-
-.cushion {
-	padding: 50px 100px 80px ;
-}
-
-.rounded {
-	border-radius: 20px;
-}
-
-.button {
-	font-weight: 300;
-	color: #fff;
-	background-color: #f15f24;
-	border-radius: 10px;
-	padding: 8px 21px;
-}
-
-.fl{
-	float: left;
-}
-
-.fr {
-	float: right;
-}
-
-.highlight {
-	color: #f15f24;
-	font: 300 28px/28px 'Arima Madurai', cursive;
-}
-
-/* 
----------------------------------------------
-Clear-fix
----------------------------------------------
-*/
-
-.cf:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* 
----------------------------------------------
-Grid
----------------------------------------------
-*/
-
-.col-1-2 {
-	width: 50%;
-	float: left;
-}
-
-.col-1-3 {
-	width: 33.33%;
-	float: left;
-}
-
-.col-2-5 {
-	width: 40%;
-	float: left;
-}
-
-/* 
----------------------------------------------
-Typography
----------------------------------------------
-*/
+/* ==========================================================================
+   Typography
+   ========================================================================== */
 
 h1 {
-	font: 100 48px/60px 'Arima Madurai', cursive;
-	color: #f15f24;
-	text-align: center;
-	margin: 20px 0;
-}
-
-h5 {
-	font: 300 18px/24px 'Roboto', sans-serif;
-	color: #d1d1d0;
-	text-align: center;
-	margin-bottom: 60px;
+    font: 100 48px/48px 'Delius', cursive;
+    color: #f15f24;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 h3 {
-	font: 100 30px/42px 'Roboto', sans-serif;
-	color: #fff;
-	margin: 15px 0;
-
+    font: 300 30px/42px 'Montserrat', sans-serif;    
+    color: #fff;
+    color: #d1d1d0;
 }
 
-.event-info {
-	font: 400 18px/30px 'Roboto', sans-serif;
-	color: #fff;
+.h1-desc {
+    font: 400 18px/24px 'Montserrat', sans-serif;
+    color: #d1d1d0;
+    text-align: center;
+    margin-bottom: 0;
 }
 
-small {
-	font-weight: 100;
-	font-size: 14px;
-	letter-spacing: 1px;
+.hero-text {
+    font: 100 48px/66px 'Delius', cursive;
 }
 
-/* 
----------------------------------------------
-Links
----------------------------------------------
-*/
-a {
-	text-decoration: none;
-	color: #fff;
+.highlight {
+    font: 300 28px/28px 'Delius', cursive;
+    color: #f15f24;
 }
 
-/* 
----------------------------------------------
-Background color
----------------------------------------------
-*/
+.quote {
+    font: 300 28px/28px 'Delius', cursive;
+}
+
+/* ==========================================================================
+   Common Styles
+   ========================================================================== */
+
+#container {
+    color: #fff;
+    font: 200 18px/30px 'Montserrat', sans-serif;
+    background-color: #000;
+    color: #d1d1d0;
+}
+
+.restrict-width {
+    max-width: 1280px;
+    margin: 0 auto;
+}
 
 .alt-bg {
-	background-color: #000;
+    background-color: #111;
 }
 
-/* 
----------------------------------------------
-Header
----------------------------------------------
-*/
-
-header {
-	padding: 0 100px;
+.button {
+    font-weight: 400;
+    color: #fff;
+    background-color: #f15f24;
+    /*border-radius: 10px;*/
+    padding: 0.4em 0.8em;
+    cursor: pointer;
 }
 
-nav li {
-	display: inline-block;
-	width: 100px;
-	text-align: center;
+.hero {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 25%;
+    background-attachment: fixed;
+    /*height: 80vh;*/
+    height: 100vh;
+    width: 100%;
+    position: relative;
 }
 
-nav a {
-	font-size: 20px;
-	font-weight: 300;
+.box {
+    padding: 70px;
+    padding-bottom: 80px;
 }
 
-nav img {
-	float: left;
+.line {
+    position: absolute;
+    background-color: #f15f24;
 }
 
-nav ul {
-	float: left;
-	width: 500px;
-	margin-top: 75px;
-	margin-left: 50px;	
+.rounded {
+    border-radius: 20px;
 }
 
-img.search {
-	float: right;
-	display: block;
-	margin-top: 77px;
-}
-
-nav a:hover,
-nav a.selected {
-	color: #f15f24;
+.selected {
+    color: #f15f24;
 }
 
 
-/* 
----------------------------------------------
-Footer
----------------------------------------------
-*/
+/* ==========================================================================
+   Header
+   ========================================================================== */
 
-.subscribe {
-	padding: 30px 100px 30px 100px;
+#header {
+    background-color: #191816;
+    height: 100px;
+    font: 400 18px/24px 'Montserrat', sans-serif;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 100;
 }
 
-.subscribe p {
-	font-size: 32px;
-	line-height: 48px;
+.header-content {
+    position: relative;
+    max-width: 1480px;
+    width: 100%;
+    margin: 0 auto;
 }
 
-.subscribe div {
-	padding-top: 40px;
-	padding-left: 20px;
+#header .logo {
+    position: absolute;
+    top: 25px;
+    left: 100px;
+    z-index: 500;
 }
 
-.subscribe input {
-	border: none;
-	border-bottom: solid 1px #f15f24;
-	background-color: #191816;
-	color: #fff;
-	font: 200 16px/28px 'Roboto', sans-serif;
-	letter-spacing: 1px;
-	width: 300px;
-	margin-right: 20px;
-	margin-left: 30px;
+#header .logo img {
+    height: 200px;
 }
 
-.subscribe input:focus {
-	outline: none;
+#header #menu ul {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    margin-left: 300px;
+    padding-top: 60px;
 }
 
-.contact {
-	text-align: center;
-	padding-top: 50px;
-	font: 400 18px/24px 'Roboto', sans-serif;
+a.menu-link {
+   display: none;
 }
 
-.contact .social-media {
-	margin: 10px 20px 30px 20px;
+.js nav[role=navigation] {
+    max-height: none;
 }
 
-.contact .logo {
-	padding-bottom: 20px;
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?gyd08f');
+    src:  url('../fonts/icomoon.eot?gyd08f#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?gyd08f') format('truetype'),
+    url('../fonts/icomoon.woff?gyd08f') format('woff'),
+    url('../fonts/icomoon.svg?gyd08f#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
-.contact p {
-	margin-bottom: 20px;
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-iframe {
-	border: none;
+.icon-menu:before {
+  content: "\e5d2";
+  font-size: 36px;
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+.sign-up-section {
+    background: url('../img/signupff.jpg');
+    background-size: cover;
+    background-position: bottom center;
+    background-attachment: fixed;
+    height: 300px;
+}
+
+.sign-up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.sign-up-desc{
+    width: 100%;
+    text-align: center;
+    font-size: 32px;
+    line-height: 48px;
+    font-weight: 100;
+    font: 100 32px/48px 'Delius', cursive;
+    margin-bottom: 40px;
+}
+
+.sign-up-action {
+    width: 100%;
+    text-align: center;
+    font: 200 18px/30px 'Montserrat', sans-serif;
+}
+
+.sign-up-action input {
+    border: none;
+    border-bottom: solid 1px #f15f24;
+    color: #d1d1d0;
+    font: 200 18px/30px 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+    width: 300px;
+    margin-right: 20px;
+}
+
+.sign-up-action input::placeholder {
+    color: #d1d1d0;
+}
+
+#footer {
+    text-align: center;
+    padding: 50px;
+    font-size: 16px;
+}
+
+.footer-logo {
+    margin-bottom: 10px;
+}
+
+.footer-contact {
+    margin-bottom: 30px;
+}
+
+.footer-logo {
+    height: 80px;
+}
+
+.copyright {
+    margin-top: 20px;
+    font-weight: 100;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.twitter-icon {
+    margin-right: 40px;
+    margin-left: 40px;
 }
 
 /* 
@@ -303,638 +450,502 @@ Image Captions
 */
 
 .caption {
-	position: relative;
-	overflow: hidden;
+    position: relative;
+    overflow: hidden;
 
-	/* Only the -webkit- prefix is required these days */
+    /* Only the -webkit- prefix is required these days */
     -webkit-transform: translateZ(0);
             transform: translateZ(0);
 }
 
 .caption::before {
-	content: '';
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	background: transparent;
-	transition: background .7s ease-out;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 20px;
+    background: transparent;
+    transition: background .5s;
 }
 
 .caption:hover::before {
-	background: rgba(0,0,0,.7);
+    background: rgba(0,0,0,.7);
+    background: rgba(241,95,36,.92);
 }
 
 .caption-media {
-	display: block;
-	min-width: 100%;
-	max-width: 100%;
-	height: auto;
+    display: block;
+    min-width: 100%;
+    max-width: 100%;
+    height: auto;
 }
 
 .caption-overlay {
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	color: #fff;
-	padding: 180px 40px 0 40px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    color: #000;
+    font-weight: 500;
+    padding: 100px 40px 0 40px;
+    width: 85%;
 
-	-webkit-transform: translateY(100%);
+    -webkit-transform: translateY(100%);
             transform: translateY(100%);
 
     transition: -webkit-transform 0.35s ease-out;
     transition:         transform 0.35s ease-out;
 }
 
-.caption-overlay h5 {
-	margin-bottom: 20px;
+.caption-overlay .advisory {
+    margin-top: 50px;
+    font-size: 16px;
 }
 
 .caption:hover .caption-overlay {
-	-webkit-transform: translateY(0);
+    -webkit-transform: translateY(0);
             transform: translateY(0);
 }
 
-
-
-/* 
----------------------------------------------
-Home page
----------------------------------------------
-*/
-
-#index-hero {
-	background-image: url("../images/swingin.jpg");
-	height: 650px;
-	margin-top: 117px;
-}
-
-#index-hero p {
-	padding: 200px 0 0 120px;
-	font-size: 48px;
-	font-weight: 100;
-	line-height: 60px;
-	width: 400px;
-	color: #fff;
-}
-
-#index-hero a {
-	display: inline-block;
-	margin-left: 120px;
-	margin-top: 20px;
-}
-
-.date {
-	font-size: 30px;
-	font-weight: 400;
-}
-
-.intro {
-	margin-top: 10px;
-}
-
-.intro p {
-	margin: 0 150px;
-}
-
-.line {
-	position: absolute;
-	background-color: #f15f24;
-}
-
-.week-ahead section {
-	margin: 85px 30px 0 120px;
-	width: 330px;
-}
-
-.week-ahead section p {
-	width: 130px;
-	margin-top: 15px;
-}
-
-.week-ahead a {
-	margin-top: 85px;
-}
-
-.week-ahead li {
-	position: relative;
-	margin-bottom: 50px;
-}
-
-.week-ahead .line:nth-of-type(1) {
-	height: 1px;
-	width: 270px;
-	top: 40px;
-	left: 575px;
-}
-
-.week-ahead .line:nth-of-type(2) {
-	height: 285px;
-	width: 1px;
-	top: 0;
-	left: 650px;
-}
-
-.week-ahead .line:nth-of-type(3) {
-	height: 285px;
-	width: 1px;
-	top: 80px;
-	left: 670px;
-}
-
-.arrow {
-	float: left;
-	margin-left: 510px;
-	margin-top: 50px;
-}
-
-.announced section {
-	margin-left: 70px;
-	padding-top: 340px;
-}
-
-.announced a {
-	margin-right: 20px;
-}
-
-.announced li {
-	position: relative;
-	margin-top: 80px;
-	margin-bottom: 20px;
-}
-
-.announced .line:nth-of-type(1) {
-	height: 145px;
-	width: 1px;
-	top: 300px;
-	left: 35px;
-}
-
-.announced .line:nth-of-type(2) {
-	height: 1px;
-	width: 200px;
-	top: 485px;
-	left: 5px;
-}
-
-.free li {
-	position: relative;
-}
-
-.free li:nth-of-type(2) {
-	margin-left: 17px;
-}
-
-.free .line:nth-of-type(1) {
-	height: 130px;
-	width: 1px;
-	top: 300px;
-	left: 0;
-}
-
-.free section {
-	margin-left: 20px;
-	padding-top: 300px;
-}
-
-/* 
----------------------------------------------
-Events Page
----------------------------------------------
-*/
-
-.event-day h1 {
-	text-align: left;
-}
-
-.event-day h3 {
-	padding-top: 335px;
-}
-
-.event-day li {
-	position: relative;
-}
-
-.event-day .line:nth-of-type(1) {
-	height: 130px;
-	width: 1px;
-	top: 340px;
-	left: 0;
-}
-
-.event-day section {
-	margin-left: 20px;
-}
-
-.event-day a {
-	margin: 10px 50px 0 0;
-}
-
-
-/* 
----------------------------------------------
-Contact Page
----------------------------------------------
-*/
-
-#contact-hero {
-	height: 398px;
-	background-image: url("../images/contacthero.jpg");
-	text-align: center;
-	padding-top: 150px;
-	margin-top: 117px;
-}
-
-#contact-hero p {
-	font: 300 48px/60px 'Arima Madurai', cursive; 
-}
-
-.contact-address {
-	padding: 50px 250px 80px 300px;
-}
-
-.address h3 {
-	font-family: 'Arima Madurai', cursive;
-	color: #f15f24;
-}
-
-.address {
-	padding-left: 100px;
-	padding-right: 100px;
-	text-align: left;
-}
-
-
-.address:nth-of-type(1) {
-	border-right: 0.5px solid #fff;
-}
-
-.contact-form {
-	text-align: center;
-	padding: 50px 300px 80px 300px;
-}
-
-.contact-form p {
-	padding-bottom: 50px;
-}
-
-.contact-form input, textarea {
-	border: none;
-	border-bottom: solid 1px #f15f24;
-	background-color: #000;
-	color: #fff;
-	font-weight: 300;
-	font-size: 16px;
-	font-family: 'Source Sans Pro', sans-serif;
-	width: 500px;
-	margin-bottom: 25px;
-}
-
-input:focus, textarea:focus {
-	outline: none;
-}
-
-/* 
----------------------------------------------
-Google Maps
----------------------------------------------
-*/
-
-#map {
-	padding-left: 140px;
-}
-
-#embedded-map-canvas {
-	height:100%; 
-	width:100%;
-	max-width:100%;
-}
-
-#map-container {
-	height:400px;
-	width:1000px;
-	max-width:100%;
-	list-style:none; 
-	transition: none;
-	overflow:hidden;
-}
-
-#embedded-map-canvas .text-marker {
-	max-width:none!important;
-	background:none!important;
-}
-
-#map iframe {
-	height:100%;
-	width:100%;
-	border:0;
-}
-
-
-
-/* 
----------------------------------------------
-About Page
----------------------------------------------
-*/
-
-#about-hero {
-	height: 480px;
-	background-image: url("../images/abouthero.jpg");
-	text-align: center;
-	padding-top: 200px;
-	margin-top: 117px;
-}
-
-#about-hero p {
-	font: 300 48px/60px 'Arima Madurai', sans-serif; 
-}
-
-#about {
-	position: relative;
-	padding-top: 100px;
-	padding-bottom: 100px;
-}
-
-#about p {
-	padding: 60px 20px 0 80px;
-}
-
-#about .line:nth-of-type(1) {
-	height: 1px;
-	width: 250px;
-	top: 100px;
-	left: 1000px;
-}
-
-#about .line:nth-of-type(2) {
-	height: 285px;
-	width: 1px;
-	top: 75px;
-	left: 1220px;
-}
-
-#about .line:nth-of-type(3) {
-	height: 285px;
-	width: 1px;
-	top: 130px;
-	left: 1205px;
-}
-
-#event-center {
-	padding-left: 335px;
-	padding-right: 300px;
-	position: relative;
-}
-
-#event-center .line:nth-of-type(1) {
-	height: 1px;
-	width: 355px;
-	top: 325px;
-	left: 80px;
-}
-
-#event-center .line:nth-of-type(2) {
-	height: 285px;
-	width: 1px;
-	top: -35px;
-	left: 270px;
-}
-
-#event-center .line:nth-of-type(3) {
-	height: 200px;
-	width: 1px;
-	top: -70px;
-	left: 255px;
-}
-
-/* 
----------------------------------------------
-Rent Page
----------------------------------------------
-*/
-
-#rent-hero {
-	height: 480px;
-	background-image: url("../images/renthero.jpg");
-	text-align: center;
-	padding-top: 170px;
-	margin-top: 117px;
-}
-
-#rent-hero p {
-	font: 300 48px/60px 'Arima Madurai', sans-serif; 
-}
-
-#quote {
-	position: relative;
-	padding-top: 30px;
-}
-
-#quote p {
-	font: 300 36px/42px 'Arima Madurai', sans-serif;
-	padding-left: 300px;
-	padding-right: 200px;
-	padding-bottom: 40px;
-	padding-top: 30px;
-}
-
-p#quotes {
-	position: absolute;
-	padding: 0 0;
-	left: 160px;
-	top: 20px;
-	font: 300 300px/300px 'Arima Madurai', sans-serif;
-	color: #f15f24;
-}
-
-#event-center-info h1 {
-	padding-top: 40px;
-}
-
-#event-center-info p {
-	text-align: center;
-}
-
-#about-event-center {
-	position: relative;
-	padding-top: 60px;
-	padding-bottom: 100px;
-}
-
-#about-event-center div {
-	padding-right: 60px;
-}
-
-div.promotion {
-	padding: 50px;
-}
-
-div.promotion p {
-	padding-left: 100px;
-	float: left;
-	width: 65%;
-}
-
-div.promotion a {
-	display: inline-block;
-	margin-top: 20px;
-	margin-left: 50px;
-}
-
-.special-text {
-	font: 300 32px/40px 'Arima Madurai', cursive;
-}
-
-/* 
----------------------------------------------
-Calendar
----------------------------------------------
-*/
-
-
-#min-calendar {
-	height: 100px;
-	margin-top: 117px;
-	text-align: center;
-	background-color: #000;
-}
-
-#min-calendar a.expand {
-	display: inline-block;
-	padding: 30px 300px 0 0;
-	font: 300 36px/36px 'Arima Madurai', cursive;
-	color: #f15f24;
-}
-
-#min-calendar p {
-	font: 300 20px/20px 'Arima Madurai', cursive;
-	color: #fff;
-	position: relative;
-	left: -30px;
-	top: -26px;
-}
-
-#calendar {
-	height: 400px;
-	margin-top: 117px;
-	text-align: center;
-	background-color: #000;
-}
-
-#calendar ul {
-	list-style-type: none;
-}
-
-#calendar .month-name {
-	font: 300 28px/28px 'Arima Madurai', cursive;
-	color: #f15f24;
-	text-align: center;
-}
-
-/* Month header */
-#calendar .month {
-    padding: 10px 0;
-    margin: 0 200px;
-}
-
-/* Month list */
-#calendar .month ul {
-    margin: 0;
-    padding: 0;
-}
-
-#calendar .month ul li {
-    color: white;
-    font-size: 20px;
-}
-
-#calendar .month .title {
-	position: relative;
-}
-
-/* Previous button inside month header */
-#calendar .month .prev {
+.img-caption {
+    /*background: #030c17;
+    background: #f15f24;*/
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.img-caption img {
+    position: relative;
+    display: block;
+    min-height: 100%;
+    max-width: 100%;
+    opacity: 0.9;
+    -webkit-transition: opacity 0.35s;
+    transition: opacity 0.35s;
+}
+
+.img-caption-overlay {
+    padding: 40px;
+    color: #fff;
+    /*text-transform: uppercase;*/
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    color: #000;
+    font-weight: 500;
+}
+
+.img-caption-overlay::before,
+.img-caption-overlay::after {
+    pointer-events: none;
+}
+
+.img-caption-overlay,
+.img-caption-overlay > a {
     position: absolute;
-    left: 500px;
     top: 0;
-    font-size: 48px;
-    font-weight: 200;
-    color:#777;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
-#calendar .month .close {
+.img-caption-overlay::before {
     position: absolute;
-    left: 620px;
-    top: -30px;
-    font-size: 28px;
-    font-weight: 200;
-    color: #f15f24;
-}
-
-/* Next button */
-#calendar .month .next {
-    position: absolute;
-    left: 530px;
-    top: 0;
-    font-size: 48px;
-    font-weight: 200;
-}
-
-/* Weekdays (Mon-Sun) */
-#calendar .weekdays {
-    padding: 10px 0;
-    margin: 0 200px;
-}
-
-#calendar .weekdays li {
-    display: inline-block;
-    width: 13.6%;
-    font-family: 'Arima Madurai', cursive;
-    font-weight: 400;
-    font-size: 16px;
-    color: #f15f24;
-    text-align: center;
-}
-
-/* Days (1-31) */
-#calendar .days {
-    padding: 10px 0;
-    margin: 0 200px;
-}
-
-#calendar .days li {
-    list-style-type: none;
-    display: inline-block;
-    width: 13.6%;
-    text-align: center;
-    margin-bottom: 5px;
-    font-size:14px;
-    color:#777;
-}
-
-/* Highlight the "current" day */
-#calendar .days li .today {
-    padding: 6px;
+    top: 30px;
+    right: 30px;
+    bottom: 30px;
+    left: 30px;
+    /*border: 2px solid #f15f24;
+    border: 2px solid #000;*/
+    box-shadow: 0 0 0 30px rgba(255,255,255,0.2);
+    box-shadow: 0 0 0 30px rgba(241, 95, 36, 0.5);
     background: #f15f24;
-    border-radius: 100%;
-    color: white !important
+    background: rgba(241, 95, 36, 0.95);
+    content: '';
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: scale3d(1.4,1.4,1);
+    transform: scale3d(1.4,1.4,1);
 }
 
-#calendar .days li .event-day {
-    padding: 6px;
-    border: 1px solid #f15f24;
-    border-radius: 100%;
-    color: white !important
+.img-caption h2 {
+    margin: 20% 0 10px 0;
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
 }
 
-#calendar .days li.future {
-	color: #fff;
+.img-caption p {
+    padding: 1em;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
 }
 
-.content {
-	display: none;
+.img-caption:hover h2 {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+}
+
+.img-caption:hover .img-caption-overlay::before,
+.img-caption:hover p {
+    opacity: 1;
+    -webkit-transform: scale3d(1,1,1);
+    transform: scale3d(1,1,1);
+}
+
+.img-caption:hover .img-caption-overlay {
+    background-color: rgba(58,52,42,0);
+}
+
+.img-caption:hover img {
+    opacity: 0.4;
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media screen and (max-width: 1378px) {
+    .box {
+        padding: 50px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    h1 {
+        font-size: 42px;
+        line-height: 42px;
+    }
+}
+
+@media screen and (max-width: 1176px) {
+    h3 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+    
+    .box {
+        padding: 40px;
+    }
+
+    .hero-text {
+        font-size: 36px;
+        line-height: 48px;
+    }
+
+    .button {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #header .logo img {
+        height: 175px;
+    }
+
+    .box {
+        padding: 35px;
+    }
+
+    .sign-up-section {
+        height: 275px;
+    }
+
+    .sign-up-desc {
+        padding-right: 0;
+    }
+
+    .sign-up-action {
+        width: 100%;
+        text-align: center;
+        padding-left: 0;
+        padding-bottom: 10px;
+        padding-top: 30px;
+    }
+
+    .sign-up-desc{
+        font-size: 28px;
+        line-height: 36px;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 968px) {
+    h3 {
+        font-size: 21px;
+        line-height: 28px;
+    }
+
+    #container {
+        font-size: 16px;
+    }
+
+    #header .logo img {
+        height: 150px;
+    }
+
+    .hero-text {
+        font-size: 32px;
+        line-height: 42px;
+    }
+
+    .button {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+   h1 {
+        font-size: 36px;
+    }
+
+    #header {
+        height: 60px;
+    }
+
+    #header .logo {
+        top: 10px;
+        left: 10%;
+    }
+
+    #header .logo img {
+        height: 100px;
+    }
+
+    #header #menu ul {
+        display: block;
+        width: 100%;
+        margin-left: 0;
+        padding-top: 0;
+    }
+
+    a.menu-link {
+        display: block;
+        padding-top: 12px;
+        text-align: right;
+        padding-right: 10px;
+    }
+
+    nav[role=navigation] {
+        -webkit-transition: all 0.3s ease-out;  
+        -moz-transition: all 0.3s ease-out;
+        -ms-transition: all 0.3s ease-out;
+        -o-transition: all 0.3s ease-out;
+        transition: all 0.3s ease-out;
+    }
+
+    .js nav[role=navigation] {
+        overflow: hidden;
+        max-height: 0;
+    }
+    nav[role=navigation].active {
+        max-height: 15em;
+    }
+    nav[role=navigation] ul {
+        margin: 0;
+        padding: 0;
+        border-top: 1px solid #808080;
+    }
+    nav[role=navigation] li a {
+        display: block;
+        margin: 0.3em 0.8em;
+        padding: 0.5em 0;
+        border-bottom: 1px solid #808080;
+    } 
+
+    .sign-up-section {
+        height: 250px;
+    }
+
+    .sign-up-desc{
+        font-size: 21px;
+        line-height: 32px;
+        margin-bottom: 0;
+    }
+
+    .sign-up-action input {
+        font-size: 14px;
+        line-height: 18px;
+        width: 250px;
+        margin-right: 0;
+        margin-bottom: 25px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    h1 {
+        font-size: 32px;
+    }
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster */
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
 }

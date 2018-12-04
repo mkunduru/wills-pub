@@ -1,0 +1,112 @@
+/* ==========================================================================
+   Hero
+   ========================================================================== */
+
+.contact-hero {
+	/*background: linear-gradient(
+      rgba(0, 0, 0, 0.2), 
+      rgba(0, 0, 0, 0.2)
+    ), url("../img/contact-hero.jpg");*/
+    background: url("../img/contact-hero.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/*height: 70vh;*/
+}
+
+.contact-hero-text {
+	text-align: center;
+	color: #f15f24;
+	font-size: 48px;
+}
+
+/* ==========================================================================
+   Contact styles
+   ========================================================================== */
+
+h3 {
+	color: #f15f24;
+	font-size: 24px;
+	line-height: 30px;
+}
+
+.contact-section {
+	display: flex;
+	justify-content: center;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.addresses {
+	width: 350px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(
+      rgba(0, 0, 0, 0.6), 
+      rgba(0, 0, 0, 0.6)
+    );
+}
+
+#map {
+	width: 550px;
+	height: 330px;
+}
+
+.address {
+	width: 220px;
+}
+
+.address:nth-child(1) {
+	margin-bottom: 30px;
+}
+
+.address:nth-child(2) {
+	
+}
+
+.contact-form-fields {
+	text-align: center;
+	width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 40px;
+}
+
+.contact-form-fields input, textarea {
+	border: none;
+	border-bottom: solid 1px #f15f24;
+	background-color: #000;
+	color: #d1d1d0;
+	font-weight: 300;
+	font-size: 16px;
+	font-family: 'Montserrat', sans-serif;
+	width: 500px;
+	margin-bottom: 35px;
+}
+
+textarea {
+	margin-bottom: 50px;
+}
+
+input:focus, textarea:focus {
+	outline: none;
+}
+
+.contact-form .button {
+	display: inline-block;
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+	.contact-form-fields,
+	.contact-form-fields input,
+	.contact-form-fields textarea {
+		width: 80vw;
+	}
+}
