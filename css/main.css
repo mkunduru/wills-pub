@@ -696,7 +696,7 @@ Image Captions
 
 @media screen and (max-width: 1500px) {
     .sign-up-section {
-        background: url('../img/signup.jpg');
+        background-image: url('../img/signup.jpg');
         height: 300px;
     }
 }
