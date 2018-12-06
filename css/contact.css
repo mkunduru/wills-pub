@@ -19,7 +19,8 @@
 .contact-hero-text {
 	text-align: center;
 	color: #f15f24;
-	font-size: 48px;
+	font-size: 42px;
+	font: 100 42px/66px 'Delius', cursive;
 }
 
 /* ==========================================================================
