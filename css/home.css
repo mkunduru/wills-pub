@@ -326,6 +326,7 @@
 @media screen and (max-width: 1280px) {
 	.home-hero-content {
         width: 300px;
+        top: 150px;
     }
 
     .current-show {
